@@ -9,6 +9,8 @@ return {
             integrations = {
                 cmp = true,
                 treesitter = true,
+                bufferline = true,
+                neotree = true,
             },
         })
         vim.cmd.colorscheme("catppuccin")
