@@ -16,3 +16,4 @@ split-divider-color = #45475a
 keybind = global:cmd+f1=toggle_quick_terminal
 quick-terminal-animation-duration = 0.1
 macos-titlebar-style = tabs
+macos-option-as-alt = true

@@ -19,6 +19,9 @@ vim.opt.shiftwidth = 4
 vim.opt.listchars = "tab:» ,lead:·,trail:·"
 vim.opt.list = true
 
+-- Hide the "~" markers shown on empty lines past the end of the buffer
+vim.opt.fillchars:append({ eob = " " })
+
 vim.opt.winborder = "rounded"
 vim.api.nvim_set_option("clipboard", "unnamed")
 
