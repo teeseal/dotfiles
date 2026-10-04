@@ -1,11 +1,10 @@
+[user]
+	name = Alex Hincu
+	email = alex@teeseal.dev
 [core]
 	editor = nvim
 [init]
 	defaultBranch = main
-[user]
-	name = Alex Hincu
-	email = alex@teeseal.dev
-	signingKey = 1179468EE5D69764
 [fetch]
 	prune = true
 [pull]
