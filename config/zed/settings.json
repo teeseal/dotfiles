@@ -42,9 +42,11 @@
 
   "agent": {
     "enabled": true,
-    "sidebar_side": "right",
     "dock": "right",
     "default_width": 360,
+    "threads_sidebar": {
+      "position": "right"
+    },
   },
   "edit_predictions": {
     "provider": "copilot",
