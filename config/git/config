@@ -12,21 +12,6 @@
 [push]
 	autoSetupRemote = true
 [alias]
-	d = difftool
-	squash = "!f() { git reset --soft \"HEAD~$1\"; git commit -m \"$2\"; }; f"
-	undo = "!f() { git reset --soft \"HEAD~$1\"; }; f"
-	undof = "!f() { git reset --hard \"HEAD~$1\"; }; f"
-	rb = "!f() { git rebase $1; }; f"
-	rbi = "!f() { git rebase --interactive --autosquash $1; }; f"
-	delete-merged-branches = "!f() { local default_branch=$(git config init.defaultBranch || echo 'master'); git branch --no-color --merged $default_branch | grep -vE $default_branch | xargs -r git branch -d; }; f"
-	bda = delete-merged-branches
-	delete-remote-merged-branches = "!f() { local default_branch=$(git config init.defaultBranch || echo 'master'); git branch --no-color --merged $default_branch | grep -vE $default_branch | xargs -r git push --delete origin; }; f"
-	bdar = delete-remote-merged-branches
-	cleanup = "!f() { local default_branch=$(git config init.defaultBranch || echo 'master'); git checkout $default_branch && git pull upstream $default_branch && git push; git delete-remote-merged-branches; git delete-merged-branches;}; f"
-	l = "log --oneline"
-	psup = "push --set-upstream"
-	sw = "switch"
-	cb = "checkout -b"
-	bd = "branch -D"
+	bda = "!f() { local default_branch=$(git config init.defaultBranch || echo 'master'); git branch --no-color --merged $default_branch | grep -vE $default_branch | xargs -r git branch -d; }; f"
 [include]
 	path = config.local
