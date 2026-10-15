@@ -23,7 +23,6 @@ vim.opt.list = true
 vim.opt.fillchars:append({ eob = " " })
 
 vim.opt.winborder = "rounded"
-vim.api.nvim_set_option("clipboard", "unnamed")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
